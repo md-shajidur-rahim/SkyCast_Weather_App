@@ -1,24 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+    
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App Using HTML, CSS and JavaScript</title>
+    <title>SkyCast_Home</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
+<!-- Main Content -->
 <body>
     <div class="container">
+
+        <!-- Contains an icon, a text input for the location, and a search button -->
         <div class="search-box">
             <i class='bx bxs-map'></i> 
             <input type="text" placeholder="Enter your location">
             <button class='bx bx-search'></button>
         </div>
 
+        <!-- A paragraph for the city name, initially hidden -->
         <p class="city-hide">city hide</p>
 
+        <!-- Displays weather information including an image, temperature, and description -->
         <div class="weather-box">
             <div class="box">
                 <div class="info-weather">
@@ -31,6 +37,7 @@
             </div>
         </div>
 
+        <!-- Displays additional weather details such as humidity and wind speed -->
         <div class="weather-details">
             <div class="humidity">
                 <i class='bx bx-water'></i>
@@ -53,6 +60,7 @@
             </div>
         </div>
 
+        <!-- Displays when the location is not found -->
         <div class="not-found">
             <div class="box">
                 <img src="images/404.png">
@@ -61,7 +69,8 @@
         </div>
     </div>
 
+    <!-- Linking script.js to handle the dynamic behavior of the app -->
     <script src="script.js"></script>
-</body>
 
+</body>
 </html>
